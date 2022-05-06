@@ -11,7 +11,7 @@ const NavBar = () => {
                         Información
                     </button>
                     <div className="dropdown-menu">
-                        <Link to="/" className="dropdown-item btn btn-segundary">¿Qué es la Vasectomía?</Link>
+                        <Link to="/queeslavasectomia" className="dropdown-item btn btn-segundary">¿Qué es la Vasectomía?</Link>
                         <a className="dropdown-item btn btn-secundary" href="#">¿Dónde realizarse la Vasectomía?</a>
                         <a className="dropdown-item btn btn-secundary" href="#">¿Cúanto sale la Vasectomía?</a>
                         <a className="dropdown-item btn btn-secundary" href="#">Mitos</a>

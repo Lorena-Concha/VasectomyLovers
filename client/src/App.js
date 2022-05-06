@@ -7,10 +7,16 @@ import { UserProvider } from "./contexts/userContext";
 import Home from "./views/Home";
 import Asectomy from "./assests/Asectomy2.png"
 import Experiences from "./components/Experiences";
-import { useUser } from "./contexts/userContext";
-import { useNavigate } from "react-router-dom";
 import NavBar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Vasectomia from "./views/Vasectomia";
+import DondeRealizarse from "./views/DondeRealizarse";
+import CuantoSale from "./views/CuantoSale";
+import Mitos from "./views/Mitos";
+import Espermiograma from "./views/Espermiograma";
+import ResponsabilidadAfectiva from "./views/ResponsabilidadAfectiva";
+import Est from "./views/Est";
+import Contacta from "./views/Contacta";
+
 
 
 function App() {
@@ -35,6 +41,7 @@ function App() {
                   <Link to="/registro" className='btn btn-outline-light'>Registro</Link>
                 </li>
 
+               
               </ul>
             </div>
             <NavBar/>
@@ -51,7 +58,19 @@ function App() {
             <Route path="/main" element={<Main/>} />
             <Route path="/registro" element={<Register />} />
 
+            <Route path="/queeslavasectomia" element={<Vasectomia/>} />
+            <Route path="/donderealizarcelavasectomia" element={<DondeRealizarse/>} />
+            <Route path="/cuantosalelavasectomia" element={<CuantoSale/>} />
+            <Route path="/mitos" element={<Mitos/>} />
+
             <Route path="/experiencias" element= {<Experiences/>} />
+            <Route path="/espermiograma" element= {<Espermiograma/>} />
+
+            <Route path="/queeslaresponsabilidadafectiva" element= {<ResponsabilidadAfectiva/>} />
+            <Route path="/est" element= {<Est/>} />
+
+            <Route path="/contacta" element= {<Contacta/>} />
+
           </Routes>
         </Router >
 
