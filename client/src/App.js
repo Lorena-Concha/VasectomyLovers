@@ -16,8 +16,11 @@ import Espermiograma from "./views/Espermiograma";
 import ResponsabilidadAfectiva from "./views/ResponsabilidadAfectiva";
 import Est from "./views/Est";
 import Contacta from "./views/Contacta";
+import Footer from "./components/Footer";
 
-
+function Root(){
+  
+}
 
 function App() {
   return (
@@ -72,12 +75,13 @@ function App() {
             <Route path="/contacta" element= {<Contacta/>} />
 
           </Routes>
+          <div><Footer/></div>
         </Router >
 
       </UserProvider >
 
       </div>
-     
+
     </div >
 
   );
