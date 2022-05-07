@@ -2,7 +2,7 @@ const { default: mongoose } = require("mongoose");
 const Post = require("../models/post.model");
 
 module.exports.findAllPost = (req, res) => {
-    Post.find().populate('author').populate({
+    Post.find().sort('-createdAt').populate('author').populate({
         path: 'comments',
         populate: {
           path: 'author',
@@ -37,14 +37,18 @@ module.exports.createNewPost = (req, res) => {
 }
 
 module.exports.findOnePost = (req, res) => {
-    Post.findOne({ _id: req.params.id })
+    Post.findOne({ _id: req.params.id }).populate('author').populate({
+      path: 'comments',
+      populate: {
+        path: 'author',
+        model: 'User'
+      }
+    })
         .then((post) => res.json({ post: post }))
         .catch((err) => res.json({ message: "Algo salio mal", error: err }))
 }
 
 module.exports.updatePost = (req, res) => {
-    console.log(req.body)
-    console.log(req.params)
     Post.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true })
         .then((post) => res.json({ post: post}))
         .catch((err) => res.json({ message: "Algo salio mal", error: err }))
