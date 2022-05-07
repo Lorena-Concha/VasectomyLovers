@@ -13,7 +13,6 @@ const NavBar = () => {
                     <div className="dropdown-menu">
                         <Link to="/queeslavasectomia" className="dropdown-item btn btn-segundary">¿Qué es la Vasectomía?</Link>
                         <Link to="/donderealizarcelavasectomia" className="dropdown-item btn btn-secundary" >¿Dónde realizarse la Vasectomía?</Link>
-                        <Link to="/cuantosalelavasectomia" className="dropdown-item btn btn-secundary">¿Cúanto sale la Vasectomía?</Link>
                         <Link to="/mitos" className="dropdown-item btn btn-secundary">Mitos</Link>
                     </div>
                     <div className="btn-group">
