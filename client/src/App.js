@@ -10,7 +10,6 @@ import Experiences from "./components/Experiences";
 import NavBar from "./components/Navbar";
 import Vasectomia from "./views/Vasectomia";
 import DondeRealizarse from "./views/DondeRealizarse";
-import CuantoSale from "./views/CuantoSale";
 import Mitos from "./views/Mitos";
 import Espermiograma from "./views/Espermiograma";
 import ResponsabilidadAfectiva from "./views/ResponsabilidadAfectiva";
@@ -64,7 +63,6 @@ function App() {
 
             <Route path="/queeslavasectomia" element={<Vasectomia/>} />
             <Route path="/donderealizarcelavasectomia" element={<DondeRealizarse/>} />
-            <Route path="/cuantosalelavasectomia" element={<CuantoSale/>} />
             <Route path="/mitos" element={<Mitos/>} />
 
             <Route path="/experiencias" element= {<Experiences/>} />
