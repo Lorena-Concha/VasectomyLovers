@@ -1,4 +1,10 @@
 import React from 'react';
+import dos from "../assests/clinicas/clinica2.jpeg"
+import tres from "../assests/clinicas/clinica3.png"
+import cuatro from "../assests/clinicas/clinica4.png"
+import seis from "../assests/clinicas/clinica6.png"
+import siete from "../assests/clinicas/clinica7.png"
+import ocho from "../assests/clinicas/clinica8.png"
 
 const DondeRealizarse = () => {
     return (
@@ -17,12 +23,19 @@ const DondeRealizarse = () => {
                 <a href='https://www.cotizarisapreonline.cl/index.html?gclid=EAIaIQobChMI-Ym78pvM9wIVmhitBh2utQLGEAAYASAAEgIPkPD_BwE'>Para más info, pregunta direto en tu Isapre</a>
                 </div>
             </div>
-        <div className='container'>
-            <div className='col'></div>
-            <div className='col'></div>
-            <div className='w-100'></div>
-            <div className='col'></div>
-            <div className='col'></div>            
+        <div className='d-flex flex-column'>
+            <div className='d-flex flex-row justify-content-around'>
+                <a href='https://www.istclinicalocurro.cl/' ><img width="200" height="100" src={dos}></img></a>
+                <a href='#' ><img width="200" height="100" src={tres}></img></a>
+                <a href='#' ><img width="200" height="100" src={cuatro}></img></a>
+            </div>
+            <div className='d-flex flex-row justify-content-around'>
+                <a href='#' ><img width="200" height="100" src={seis}></img></a>
+                <a href='#' ><img width="200" height="100" src={siete}></img></a>
+                <a href='#' ><img width="200" height="100" src={ocho}></img></a>
+            </div>
+            
+             
         </div>
 
         </div>

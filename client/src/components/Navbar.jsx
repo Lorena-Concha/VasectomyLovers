@@ -16,13 +16,13 @@ const NavBar = () => {
                         <Link to="/mitos" className="dropdown-item btn btn-secundary">Mitos</Link>
                     </div>
                     <div className="btn-group">
-                    <button type="button" className="btn btn-warning dropdown-toggle m-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button type="button" className="dropdown-toggle m-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Vasectomy Lovers
                     </button>
                     <div className="dropdown-menu">
-                        <Link to="/experiencias" className="dropdown-item btn btn-segundary">Mi experiencia</Link>
-                        <Link to="/testimonios" className="dropdown-item btn btn-segundary">Testimonios</Link>
-                        <Link to="/expermiograma" className="dropdown-item btn btn-segundary">Espermiograma</Link>
+                        <Link to="/experiencias" className="dropdown-item btn ">Mi experiencia</Link>
+                        <Link to="/testimonios" className="dropdown-item ">Testimonios</Link>
+                        <Link to="/espermeograma" className="dropdown-item ">Espermeograma</Link>
                     </div>
                     </div>
                     <div className="btn-group">
@@ -30,7 +30,7 @@ const NavBar = () => {
                         Responsabilidad Afectiva
                     </button>
                     <div className="dropdown-menu">
-                        <a className="dropdown-item btn btn-warning" href="#">¿Qué es la responsabilidad afectiva?</a>
+                        <Link to="/queeslaresponsabilidadafectiva" className="dropdown-item btn btn-warning" href="#">¿Qué es la responsabilidad afectiva?</Link>
                         <a className="dropdown-item btn btn-warning" href="#">EST</a>
                     </div>
                     </div>
