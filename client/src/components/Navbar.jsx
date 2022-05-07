@@ -21,8 +21,9 @@ const NavBar = () => {
                         Vasectomy Lovers
                     </button>
                     <div className="dropdown-menu">
-                        <a className="dropdown-item btn btn-warning" href="#">Experiencias</a>
-                        <a className="dropdown-item btn btn-warning" href="#">Espermiograma</a>
+                        <Link to="/experiencias" className="dropdown-item btn btn-segundary">Mi experiencia</Link>
+                        <Link to="/testimonios" className="dropdown-item btn btn-segundary">Testimonios</Link>
+                        <Link to="/expermiograma" className="dropdown-item btn btn-segundary">Espermiograma</Link>
                     </div>
                     </div>
                     <div className="btn-group">

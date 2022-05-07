@@ -17,6 +17,7 @@ import ResponsabilidadAfectiva from "./views/ResponsabilidadAfectiva";
 import Est from "./views/Est";
 import Contacta from "./views/Contacta";
 import Footer from "./components/Footer";
+import Testimonios from "./views/Testimonios";
 
 function Root(){
   
@@ -67,6 +68,7 @@ function App() {
             <Route path="/mitos" element={<Mitos/>} />
 
             <Route path="/experiencias" element= {<Experiences/>} />
+            <Route path="/testimonios" element= {<Testimonios/>} />
             <Route path="/espermiograma" element= {<Espermiograma/>} />
 
             <Route path="/queeslaresponsabilidadafectiva" element= {<ResponsabilidadAfectiva/>} />
