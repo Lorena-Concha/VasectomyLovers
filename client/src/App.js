@@ -45,7 +45,7 @@ function App() {
                   <Link to="/registro" className='btn btn-outline-light'>Registro</Link>
                 </li>
 
-               
+
               </ul>
             </div>
             <NavBar/>
