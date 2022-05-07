@@ -17,6 +17,7 @@ import Est from "./views/Est";
 import Contacta from "./views/Contacta";
 import Footer from "./components/Footer";
 import Testimonios from "./views/Testimonios";
+import Comentarios from "./views/Comentarios";
 
 function Root(){
   
@@ -73,7 +74,7 @@ function App() {
             <Route path="/est" element= {<Est/>} />
 
             <Route path="/contacta" element= {<Contacta/>} />
-
+            <Route path="/comentarios/:id" element= {<Comentarios/>} />
           </Routes>
           <div><Footer/></div>
         </Router >
