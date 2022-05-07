@@ -12,9 +12,9 @@ const NavBar = () => {
                     </button>
                     <div className="dropdown-menu">
                         <Link to="/queeslavasectomia" className="dropdown-item btn btn-segundary">¿Qué es la Vasectomía?</Link>
-                        <a className="dropdown-item btn btn-secundary" href="#">¿Dónde realizarse la Vasectomía?</a>
-                        <a className="dropdown-item btn btn-secundary" href="#">¿Cúanto sale la Vasectomía?</a>
-                        <a className="dropdown-item btn btn-secundary" href="#">Mitos</a>
+                        <Link to="/donderealizarcelavasectomia" className="dropdown-item btn btn-secundary" >¿Dónde realizarse la Vasectomía?</Link>
+                        <Link to="/cuantosalelavasectomia" className="dropdown-item btn btn-secundary">¿Cúanto sale la Vasectomía?</Link>
+                        <Link to="/mitos" className="dropdown-item btn btn-secundary">Mitos</Link>
                     </div>
                     <div className="btn-group">
                     <button type="button" className="btn btn-warning dropdown-toggle m-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
