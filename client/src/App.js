@@ -12,16 +12,12 @@ import Vasectomia from "./views/Vasectomia";
 import DondeRealizarse from "./views/DondeRealizarse";
 import CuantoSale from "./views/CuantoSale";
 import Mitos from "./views/Mitos";
-import Espermiograma from "./views/Espermiograma";
+import Espermeograma from "./views/Espermeograma";
 import ResponsabilidadAfectiva from "./views/ResponsabilidadAfectiva";
 import Est from "./views/Est";
 import Contacta from "./views/Contacta";
 import Footer from "./components/Footer";
 import Testimonios from "./views/Testimonios";
-
-function Root(){
-  
-}
 
 function App() {
   return (
@@ -69,7 +65,7 @@ function App() {
 
             <Route path="/experiencias" element= {<Experiences/>} />
             <Route path="/testimonios" element= {<Testimonios/>} />
-            <Route path="/espermiograma" element= {<Espermiograma/>} />
+            <Route path="/espermeograma" element= {<Espermeograma/>} />
 
             <Route path="/queeslaresponsabilidadafectiva" element= {<ResponsabilidadAfectiva/>} />
             <Route path="/est" element= {<Est/>} />

@@ -6,20 +6,6 @@ import { useUser } from "../contexts/userContext";
 const Home = () => {
     const { user, setUser } = useUser();
 
-    const renderFooter = () => {
-        if (user) {
-            return (
-               <Footer/>
-            )
-        } else {
-            return (
-                <div className='d-flex '>
-                    <p>Registrate</p>
-                </div>
-            )
-        }
-    }
-
     return (
         <div>
            
