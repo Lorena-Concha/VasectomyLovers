@@ -12,6 +12,7 @@ const Footer = () => {
 
                 <div className='float-sm-left'>
                     <p>Usuario Activo {user.email}</p>
+                    <button onClick={logOut} className='btn btn-outline-light'>Log Out</button>
                 </div>
             )
         } else {
@@ -34,7 +35,7 @@ const Footer = () => {
         <div>
             <div>
                 <p>{renderInfo()} </p>
-                <button onClick={logOut} className='btn btn-outline-light'>Log Out</button>
+                
             </div>
         </div>
     );

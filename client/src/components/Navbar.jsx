@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useUser } from '../contexts/userContext';
 
 const NavBar = () => {
+    const { user, setUser } = useUser();
     return (
         <div>
             <div className='container d-flex justify-content-around'>
@@ -19,7 +21,7 @@ const NavBar = () => {
                         Vasectomy Lovers
                     </button>
                     <div className="dropdown-menu">
-                        <Link to="/experiencias" className="dropdown-item btn ">Mi experiencia</Link>
+                        {user?<Link to="/experiencias" className="dropdown-item btn ">Mi experiencia</Link>:''}
                         <Link to="/testimonios" className="dropdown-item ">Testimonios</Link>
                         <Link to="/espermeograma" className="dropdown-item ">Espermeograma</Link>
                     </div>
