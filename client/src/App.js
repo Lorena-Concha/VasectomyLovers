@@ -1,10 +1,9 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./views/Login";
 import Register from "./views/Register";
-import { UserProvider } from "./contexts/userContext";
+import { UserProvider, useUser } from "./contexts/userContext";
 import Home from "./views/Home";
-import Asectomy from "./assests/Asectomy2.png"
 import Experiences from "./components/Experiences";
 import NavBar from "./components/Navbar";
 import Vasectomia from "./views/Vasectomia";
@@ -18,6 +17,7 @@ import Footer from "./components/Footer";
 import Testimonios from "./views/Testimonios";
 import Comentarios from "./views/Comentarios";
 import Map from "./views/Map";
+import Botonera from "./components/Botonera";
 
 function App() {
   return (
@@ -28,22 +28,7 @@ function App() {
         <Router>
           
           <nav >
-            <div className="navbar-nav flex-row justify-content-around text-white">
-              <img src={Asectomy} width="400" height="150"></img>
-              <ul className="navbar-nav flex-row align-items-center m-2">
-                <li className="nav-item m-2 text-white">
-                  <Link to="/" className='btn btn-outline-light'>Home</Link>
-                </li>
-                <li className="nav-item m-2">
-                  <Link to="/login" className='btn btn-outline-light'>Login</Link>
-                </li>
-                <li className="nav-item m-2">
-                  <Link to="/registro" className='btn btn-outline-light'>Registro</Link>
-                </li>
-
-
-              </ul>
-            </div>
+            <Botonera/>
             <NavBar/>
             <div>
 
@@ -78,7 +63,6 @@ function App() {
       </UserProvider >
 
       </div>
-
     </div >
 
   );
