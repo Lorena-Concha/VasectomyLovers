@@ -4,9 +4,9 @@ import espermeograma from "../assests/espermiograma.png"
 
 const Espermeograma = () => {
     return (
-        <div className='container d-flex flex-row justify-content-between'>
+        <div className='container d-flex flex-row justify-content-around'>
             <div className='mt-4'>
-                <h4>Tu Espermeograma una vez vasectomizado debe ser asi: </h4>
+                <h4>Evolución Espermeograma </h4>
                 <img src={espermeograma} width="460" ></img>
             </div>
             <div className='mt-4'>
@@ -15,5 +15,4 @@ const Espermeograma = () => {
         </div>
     )
 }
-
 export default Espermeograma;

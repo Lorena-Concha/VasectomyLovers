@@ -23,8 +23,8 @@ const Testimonios = () => {
             <div className='row justify-content-center'>
             {posts?.map((post,i)=>
                 <div className='col-3 testimonios m-1 p-2 rounded' key={i}>
-                    <div><Link to={`/comentarios/${post._id}`} className="btn btn-outline-light">{post.title}</Link></div>
-                    <div>{post.text} {post.author.firstName} <p className='p'> Usuario: {post.author.lastName} </p></div>
+                    <div ><Link to={`/comentarios/${post._id}`} className="btn btn-outline-light ">{post.title}</Link></div>
+                    <div className='text'>{post.text} {post.author.firstName} <p className='p text'> Usuario: {post.author.lastName} </p></div>
                     <div class="w-100"></div>
                 </div>
             )}

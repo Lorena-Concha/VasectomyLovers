@@ -60,31 +60,32 @@ const Experiences = () => {
     };
     return (
 
-        <div className='d-flex justify-content-start m-4 container'>
+        <div  className='container d-flex flex-row justify-content-around'>
             <div>
                 <h3>Testimonios</h3>
                 <p>Titulo</p>
-                <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder='escribe un título'></input>
+                <input  className='black text-dark' type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder='escribe un título'></input>
                 <p>Escribe Aquí:</p>
                 <textarea value={text} onChange={(e) => setText(e.target.value)} placeholder='Cuentanos tu experiencia' className='form-control' cols="30" rows="10"></textarea>
-                <button onClick={() => guardarTestimonio()} className='m-2 btn btn-outline-light'>Enviar</button>
+                <button onClick={() => guardarTestimonio()} className='mt-4 btn btn-outline-light'>Enviar</button>
             </div>
-            <div className='container'>
+            <div className='myexperience'>
                 {posts?.map((post, i) =>
-                    <div key={i}>
-                        <p className='titulo'>{post.title}<button onClick={() => editarTestimonio(post._id,post.title,post.text)}
+                    <div key={i} className="experiencia rounded">
+                        <h4 className='titulo p-2'>{post.title} <br></br><button onClick={() => editarTestimonio(post._id,post.title,post.text)}
                             className="btn btn-outline-light m-2">Editar</button><button onClick={() => deleteTestimonio(post._id)}
-                            className="btn btn-outline-light">Eliminar</button></p>
-                        <p>{post.text}</p>
+                            className="btn btn-outline-light">Eliminar</button></h4>
+                        <p className='text p-3'>{post.text}</p>
                         {post.comments.map((comment, j) =>
                             <div key={j}>
                                 <p>{comment.text}</p>
-                                <p>{comment.author.firstName} {comment.author.lastName}</p>
+                                <p className='p'>{comment.author.firstName} {comment.author.lastName}</p>
                             </div>)}
                     </div>
 
                 )}
-            </div></div>
+            </div>
+            </div>
     );
 }
 

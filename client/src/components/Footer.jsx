@@ -10,8 +10,8 @@ const Footer = () => {
         if (user) {
             return (
 
-                <div className='float-sm-left'>
-                    <p>Usuario Activo {user.email}</p>
+                <div className='float-sm-left mt-3'>
+                    <p className='p'>Usuario Activo {user.email}</p>
                     <button onClick={logOut} className='btn btn-outline-light'>Log Out</button>
                 </div>
             )
