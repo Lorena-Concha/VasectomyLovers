@@ -17,7 +17,7 @@ const Footer = () => {
         } else {
             return (
                 <div className='d-flex '>
-                    <p>No hay Usuario Activo</p>
+                   
                 </div>
             )
         }

@@ -17,13 +17,18 @@ const Testimonios = () => {
     }, []);
 
     return (
-        <div>
+        <div className='container '>
+            <h1>Testimonios</h1>
+            <h5>haz click para comentar</h5>
+            <div className='row justify-content-center'>
             {posts?.map((post,i)=>
-                <div key={i}>
-                    <div><Link to={`/comentarios/${post._id}`}>{post.title}</Link></div>
-                    <div>{post.text} {post.author.firstName} {post.author.lastName}</div>
+                <div className='col-3 testimonios m-1 p-2 rounded' key={i}>
+                    <div><Link to={`/comentarios/${post._id}`} className="btn btn-outline-light">{post.title}</Link></div>
+                    <div>{post.text} {post.author.firstName} <p className='p'> Usuario: {post.author.lastName} </p></div>
+                    <div class="w-100"></div>
                 </div>
             )}
+            </div>
         </div>
     );
 }

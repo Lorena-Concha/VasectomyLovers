@@ -44,16 +44,29 @@ const Comentarios = () => {
             });
     }
     return (
-        <div>
-            <div><h1> {post?.author.firstName} {post?.author.lastName} {post?.title}</h1></div>
-            <div><h3>{post?.text} <button onClick={comentar}>Comentar</button></h3></div>
+        <div className='container'>
+            <div className='comentarios'>
+                <div>
+                    <h4 className='p'> Usuario : {post?.author.firstName} {post?.author.lastName} <p>{post?.title}</p></h4>
+                </div>
+                <div><p>{post?.text} 
+                    <div>
+                        <button onClick={comentar} className='btn btn-outline-light'>Comentar</button>
+                        </div></p>
+                    </div>
+                </div>
+                <div >
             {post?.comments.map((comment, i) =>
-                <div key={i}>{comment.text} {comment.author.firstName}</div>
+                <div key={i}>{comment.text} <p className='p'>{comment.author.firstName}</p></div>
             )}
             <div className={clas}>
-                <input type="text" value={comment} placeholder='Ingresa tu comentario' onChange={(e) => setearComentario(e)}  ></input>
-                <button onClick={enviar}>Enviar</button>
+                <br></br>
+                <input type="text" value={comment} className="input" placeholder='Ingresa tu comentario' onChange={(e) => setearComentario(e)}  ></input>
+                <br></br>
+                <button onClick={enviar} className='btn btn-outline-light mt-2'>Enviar</button>
             </div>
+            </div>
+            
         </div>
     );
 }

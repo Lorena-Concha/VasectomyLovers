@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import NavBar from '../components/Navbar';
-import Footer from '../components/Footer';
 import { useUser } from '../contexts/userContext';
 
 const Experiences = () => {
@@ -62,21 +60,21 @@ const Experiences = () => {
     };
     return (
 
-        <div className='d-flex justify-content-start m-4'>
+        <div className='d-flex justify-content-start m-4 container'>
             <div>
                 <h3>Testimonios</h3>
                 <p>Titulo</p>
-                <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder='Ingresa un titulo para tu testimonio'></input>
+                <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder='escribe un título'></input>
                 <p>Escribe Aquí:</p>
                 <textarea value={text} onChange={(e) => setText(e.target.value)} placeholder='Cuentanos tu experiencia' className='form-control' cols="30" rows="10"></textarea>
-                <button onClick={() => guardarTestimonio()} className='m-2'>Enviar</button>
+                <button onClick={() => guardarTestimonio()} className='m-2 btn btn-outline-light'>Enviar</button>
             </div>
-            <div>
+            <div className='container'>
                 {posts?.map((post, i) =>
                     <div key={i}>
-                        <p>{post.title}<button onClick={() => editarTestimonio(post._id,post.title,post.text)}
-                            className="btn btn-danger m-2 shadow-offset-left-sm border-dark">Editar</button><button onClick={() => deleteTestimonio(post._id)}
-                            className="btn btn-danger m-2 shadow-offset-left-sm border-dark">Eliminar</button></p>
+                        <p className='titulo'>{post.title}<button onClick={() => editarTestimonio(post._id,post.title,post.text)}
+                            className="btn btn-outline-light m-2">Editar</button><button onClick={() => deleteTestimonio(post._id)}
+                            className="btn btn-outline-light">Eliminar</button></p>
                         <p>{post.text}</p>
                         {post.comments.map((comment, j) =>
                             <div key={j}>

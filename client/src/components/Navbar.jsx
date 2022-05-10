@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Experiences from './Experiences';
 
 const NavBar = () => {
     return (
         <div>
-            <div>
-                <div className="btn-group">
-                    <button type="button" className="btn btn-secundary dropdown-toggle m-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div className='container d-flex justify-content-around'>
+                <div className="btn mb-5">
+                    <button type="button" className="btn btn-warning m-1 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Información
                     </button>
                     <div className="dropdown-menu">
@@ -16,7 +15,7 @@ const NavBar = () => {
                         <Link to="/mitos" className="dropdown-item btn btn-secundary">Mitos</Link>
                     </div>
                     <div className="btn-group">
-                    <button type="button" className="dropdown-toggle m-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button type="button" className="btn btn-danger dropdown-toggle m-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Vasectomy Lovers
                     </button>
                     <div className="dropdown-menu">
@@ -26,17 +25,17 @@ const NavBar = () => {
                     </div>
                     </div>
                     <div className="btn-group">
-                    <button type="button" className="btn btn-warning dropdown-toggle m-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button type="button" className="btn btn-success m-1 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Responsabilidad Afectiva
                     </button>
                     <div className="dropdown-menu">
                         <Link to="/queeslaresponsabilidadafectiva" className="dropdown-item btn btn-warning" href="#">¿Qué es la responsabilidad afectiva?</Link>
-                        <a className="dropdown-item btn btn-warning" href="#">EST</a>
+                        <Link to="/est"className="dropdown-item btn btn-warning">EST</Link>
                     </div>
                     </div>
-                    <button type="button" className="btn btn-warning m-1 " aria-haspopup="true" aria-expanded="false">
+                    <Link to="/contacta" type="button" className="btn btn-info m-1" aria-haspopup="true" aria-expanded="false">
                         Contacta un Vasectomy Lovers
-                    </button>
+                    </Link>
                     
                 </div>
             </div>

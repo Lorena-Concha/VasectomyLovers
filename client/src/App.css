@@ -1,8 +1,22 @@
 .App {
   text-align: center;
+  
 }
 * {
-  border: 2px solid red;
+margin: 0%;
+padding: 0%;
+color: white;
+}
+
+body{
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(149,149,152,1) 100%);
+}
+
+@keyframes latidos {
+  from { transform: none; }
+  50% { transform: scale(1.4); }
+  to { transform: none; }
 }
 
 .App-logo {
@@ -47,4 +61,61 @@ li {
 .mensaje {
   font-family: 'Pacifico', cursive;
 
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 200px;
+  margin: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.testimonios {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+}
+
+.leaflet-container {
+  width: 30wh; 
+  height: 80vh;
+}
+
+element.style {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  outline: none;
+}
+
+.lugares {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background-color: rgb(138, 132, 132);
+  color: black;
+  padding: 30px;
+  }
+
+.testimonios {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background-color: rgb(138, 132, 132);
+  color: rgb(192, 182, 182);
+}
+
+.p {
+  color: rgb(17, 17, 58);
+}
+
+.comentarios{
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background-color: rgb(138, 132, 132);
+  color: rgb(192, 182, 182);
+  padding: 3px;
+}
+.input {
+  color: black;
+}
+
+.titulo{
+  color: rgb(6, 214, 6);
 }

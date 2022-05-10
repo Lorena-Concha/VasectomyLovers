@@ -1,6 +1,5 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Main from "./views/Main";
 import Login from "./views/Login";
 import Register from "./views/Register";
 import { UserProvider } from "./contexts/userContext";
@@ -18,6 +17,7 @@ import Contacta from "./views/Contacta";
 import Footer from "./components/Footer";
 import Testimonios from "./views/Testimonios";
 import Comentarios from "./views/Comentarios";
+import Map from "./views/Map";
 
 function App() {
   return (
@@ -55,7 +55,6 @@ function App() {
 
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/main" element={<Main/>} />
             <Route path="/registro" element={<Register />} />
 
             <Route path="/queeslavasectomia" element={<Vasectomia/>} />
@@ -71,6 +70,7 @@ function App() {
 
             <Route path="/contacta" element= {<Contacta/>} />
             <Route path="/comentarios/:id" element= {<Comentarios/>} />
+            <Route path="/map" element= {<Map/>} />
           </Routes>
           <div><Footer/></div>
         </Router >
