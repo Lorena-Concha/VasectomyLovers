@@ -65,7 +65,9 @@ module.exports.Logout = async (req, res) => {
 
 module.exports.getAll = (request, response) => {
     User.find({})
-        .then((users) => response.json(users))
+        .then((users) => {
+            response.json(users)
+        })
         .catch((err) => response.json(err));
 };
 
